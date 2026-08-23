@@ -1,5 +1,6 @@
-const CACHE = "jixels-shell-v2";
-const APP_SHELL = ["/", "/manifest.webmanifest"];
+const CACHE = "jixels-shell-v3";
+const BASE_PATH = new URL(self.registration.scope).pathname;
+const APP_SHELL = [BASE_PATH, `${BASE_PATH}manifest.webmanifest`];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(APP_SHELL)).then(() => self.skipWaiting()));
@@ -15,5 +16,5 @@ self.addEventListener("fetch", (event) => {
     const copy = response.clone();
     caches.open(CACHE).then((cache) => cache.put(event.request, copy));
     return response;
-  }).catch(async () => caches.match(event.request) || (event.request.mode === "navigate" ? caches.match("/") : Response.error())));
-})=-[p          ]
+  }).catch(() => caches.match(event.request).then((cached) => cached || (event.request.mode === "navigate" ? caches.match(BASE_PATH) : Response.error()))));
+});
