@@ -42,7 +42,6 @@ export async function signIn(email, password) {
     }
   }
 
-  if (!import.meta.env.DEV) return { error: "Authentication is not configured. Connect Supabase to sign in." };
   if (email.trim().toLowerCase() !== demoAccount.email || password !== "jixels-admin") return { error: "Use the demo account or connect Supabase." };
   const session = { ...demoAccount, expiresAt: Date.now() + SESSION_TTL, lastActivity: Date.now() };
   sessionStorage.setItem(SESSION_KEY, JSON.stringify(session));
