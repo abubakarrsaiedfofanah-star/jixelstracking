@@ -5,6 +5,7 @@ import App from "./App";
 
 import "./styles/variables.css";
 import "./styles/global.css";
+import "./styles/palette.css";
 import "./styles/responsive.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(

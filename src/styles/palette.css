@@ -1,0 +1,8 @@
+.button.primary:hover { background: #1d4ed8; }
+.nav-item.active { color: #ffffff; background: #1d4ed8; }
+.nav-item.active em { color: #dbeafe; }
+.nav-item i { background: #60a5fa; box-shadow: 0 0 0 3px rgba(96, 165, 250, .18); }
+.secure-badge { color: #bfdbfe; background: rgba(37, 99, 235, .18); border-color: rgba(147, 197, 253, .3); }
+.secure-badge strong { color: #dbeafe; }
+.secure-badge small { color: #93c5fd; }
+.button.primary { box-shadow: 0 5px 12px rgba(37, 99, 235, .22); }
