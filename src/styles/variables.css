@@ -1,18 +1,18 @@
 :root {
   --ink: #0f172a;
   --muted: #64748b;
-  --line: #dbeafe;
-  --paper: #1d4ed8;
+  --line: #dce6f2;
+  --paper: #f8fbff;
   --white: #ffffff;
-  --nav: #1d4ed8;
-  --nav-muted: #bfdbfe;
-  --mint: #dbeafe;
-  --green: #1d4ed8;
-  --orange: #dbeafe;
-  --orange-ink: #1d4ed8;
-  --blue: #dbeafe;
-  --blue-ink: #1d4ed8;
-  --red: #dbeafe;
-  --red-ink: #1e3a8a;
+  --nav: #0b3d91;
+  --nav-muted: #dce6f2;
+  --mint: #e8f3ff;
+  --green: #1565c0;
+  --orange: #fff2e0;
+  --orange-ink: #ff8c00;
+  --blue: #e8f3ff;
+  --blue-ink: #1565c0;
+  --red: #fef2f2;
+  --red-ink: #ef4444;
   --sidebar-width: 258px;
 }
